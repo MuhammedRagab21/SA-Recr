@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lekker Abroad | Teach in Vietnam</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Geist:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "secondary-fixed-dim": "#c8c6c5",
+                "outline-variant": "#dfbfba",
+                "on-primary-container": "#f56b58",
+                "primary-container": "#660000",
+                "on-surface-variant": "#58413e",
+                "on-tertiary": "#ffffff",
+                "surface-container-highest": "#e4e2dd",
+                "on-error-container": "#93000a",
+                "outline": "#8c716d",
+                "tertiary": "#725c00",
+                "surface-tint": "#aa3527",
+                "on-surface": "#1b1c19",
+                "secondary-fixed": "#e5e2e1",
+                "inverse-surface": "#30312e",
+                "secondary-container": "#e2dfde",
+                "error": "#ba1a1a",
+                "surface-container-lowest": "#ffffff",
+                "on-tertiary-fixed": "#231b00",
+                "background": "#fbf9f4",
+                "tertiary-container": "#caa829",
+                "surface": "#fbf9f4",
+                "on-background": "#1b1c19",
+                "secondary": "#5f5e5e",
+                "error-container": "#ffdad6",
+                "on-primary-fixed": "#410000",
+                "surface-container": "#f0eee9",
+                "surface-bright": "#fbf9f4",
+                "tertiary-fixed-dim": "#e8c344",
+                "on-tertiary-fixed-variant": "#564500",
+                "inverse-on-surface": "#f2f1ec",
+                "tertiary-fixed": "#ffe081",
+                "on-primary": "#ffffff",
+                "primary-fixed-dim": "#ffb4a8",
+                "on-primary-fixed-variant": "#891d12",
+                "on-secondary": "#ffffff",
+                "surface-container-high": "#eae8e3",
+                "surface-variant": "#e4e2dd",
+                "surface-container-low": "#f5f3ee",
+                "on-tertiary-container": "#4e3e00",
+                "on-error": "#ffffff",
+                "on-secondary-container": "#636262",
+                "primary": "#3e0000",
+                "on-secondary-fixed-variant": "#474746",
+                "inverse-primary": "#ffb4a8",
+                "surface-dim": "#dbdad5",
+                "primary-fixed": "#ffdad4",
+                "on-secondary-fixed": "#1c1b1b"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "container-max": "1200px",
+                "unit": "8px",
+                "gutter": "24px",
+                "margin-mobile": "20px",
+                "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                "body-md": ["Hanken Grotesk"],
+                "display-lg-mobile": ["Libre Caslon Text"],
+                "label-caps": ["Geist"],
+                "headline-lg": ["Libre Caslon Text"],
+                "display-lg": ["Libre Caslon Text"],
+                "caption": ["Hanken Grotesk"],
+                "body-lg": ["Hanken Grotesk"],
+                "headline-md": ["Libre Caslon Text"]
+            },
+            "fontSize": {
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "display-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "700"}],
+                "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "caption": ["13px", {"lineHeight": "18px", "fontWeight": "500"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .paper-texture {
+            background-color: #fbf9f4;
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+        }
+        .stamp-border {
+            border: 2px solid #3e0000;
+            padding: 4px 8px;
+            text-transform: uppercase;
+            font-family: 'Geist', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            display: inline-block;
+        }
+        .dossier-line {
+            height: 1px;
+            background-color: rgba(62, 0, 0, 0.15);
+            width: 100%;
+        }
+        .route-blue-btn {
+            background-color: #800000 !important;
+            color: white !important;
+            transition: all 0.2s ease;
+        }
+        .route-blue-btn:hover {
+            background-color: #600000 !important;
+            transform: translateY(-1px);
+        }
+        .oxblood-outline-btn {
+            border: 1px solid #3e0000;
+            color: #3e0000;
+            transition: all 0.2s ease;
+        }
+        .oxblood-outline-btn:hover {
+            background-color: rgba(62, 0, 0, 0.05);
+        }
+        .financial-cta {
+            background-color: #caa829;
+            color: #1b1c19;
+            font-weight: 600;
+        }
+        .document-card {
+            background: #ffffff;
+            border: 1px solid rgba(26, 26, 26, 0.15);
+            transition: border-color 0.3s ease;
+        }
+        .document-card:hover {
+            border-color: #3e0000;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .checked-box::after {
+            content: 'X';
+            font-family: 'Geist', sans-serif;
+            font-weight: 700;
+            color: #3e0000;
+        }
+    </style>
+</head>
+<body class="paper-texture text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<nav class="w-full top-0 sticky bg-surface border-b border-outline/15 z-50">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md text-primary uppercase tracking-widest" href="index.html">
+                Lekker Abroad
+            </a>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="about.html">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="resources.html">Training</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="pricing.html">Packages</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="testimonials.html">Testimonials</a>
+<a class="route-blue-btn px-6 py-2 rounded font-label-caps text-label-caps uppercase" href="apply.html">Apply Now</a>
+</div>
+<button class="md:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<!-- Mobile Navigation Menu -->
+<div class="hidden w-full bg-surface border-b border-outline/15 px-margin-desktop py-4 flex-col gap-4 md:hidden" id="mobile-nav">
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="about.html">About</a>
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="resources.html">Training</a>
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="pricing.html">Packages</a>
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="testimonials.html">Testimonials</a>
+    <a class="route-blue-btn px-6 py-2 rounded font-label-caps text-label-caps uppercase text-center block" href="apply.html">Apply Now</a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[85vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent z-10"></div>
+<img alt="Hero background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsdyyz5HHjmRxkEN0s1okEkjDlXAVL1wtJf6m8R3uLK8xkitZmAWNa7_CT-R7SsFj9VUuc5WhAzxCsXM9P3maP1bv6u79ZjXCiY0qTJkanCgBPiUwOGFNwktB1y594GkWbYeGU1RLDoLAMzrSTr32hNb-ft7lIYb-rkWiF_Rxh2unWy8p7kQWDbSAqk7zMl_W8Djlj781h3FXoGJye3d-e1CXlSW2a29rwQgdCKfCLaxsrba00QGLxOddGN"/>
+</div>
+<div class="relative z-20 px-margin-desktop max-w-container-max mx-auto w-full text-white">
+<div class="max-w-2xl">
+<span class="stamp-border border-white text-white mb-6">Official Relocation Entry</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">
+                        Helping South Africans Teach, Earn, and Save in Northern Vietnam.
+                    </h1>
+<p class="font-body-lg text-body-lg mb-8 opacity-90 max-w-lg">
+                        Tired of flat-lining salaries and high living costs? Relocate to Northern Vietnam as an English teacher. Earn R28,000 - R45,000/mo, live comfortably on R10,000/mo, and save the rest—fully guided from documents to classroom placement.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="financial-cta px-8 py-4 rounded-lg font-label-caps text-label-caps uppercase shadow-lg inline-block font-bold" href="apply.html">Start Relocation Assessment</a>
+<a class="bg-white/10 backdrop-blur-sm border border-white/30 px-8 py-4 rounded-lg font-label-caps text-label-caps uppercase hover:bg-white/20 transition-all inline-block font-bold" href="pricing.html">Explore Support Packages</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Financial Outcomes (Lead with this) -->
+<section class="py-24 px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-16">
+<span class="font-label-caps text-primary uppercase mb-2 block tracking-widest">Financial Comparison</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">South Africa vs. Northern Vietnam</h2>
+<div class="dossier-line mb-10"></div>
+
+<!-- Comparison Table/Chart -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter mb-16">
+    <!-- SA Status Quo -->
+    <div class="document-card p-8 border-l-4 border-error/50 bg-[#fff5f5]/30">
+        <h3 class="font-headline-md text-headline-md text-error mb-4 flex items-center gap-2">
+            <span class="material-symbols-outlined">trending_down</span> South Africa Status Quo
+        </h3>
+        <ul class="space-y-4 font-body-md text-on-surface-variant">
+            <li class="flex items-start gap-2"><span class="text-error font-bold">✕</span> High entry-level friction (high unemployment, stagnant corporate salaries).</li>
+            <li class="flex items-start gap-2"><span class="text-error font-bold">✕</span> High cost of living (surging grocery prices, fuel costs, electricity rates).</li>
+            <li class="flex items-start gap-2"><span class="text-error font-bold">✕</span> Severe security tax (gated communities, security fees, safety anxiety).</li>
+            <li class="flex items-start gap-2"><span class="text-error font-bold">✕</span> Stagnant savings potential (average household savings rate is near zero).</li>
+        </ul>
+    </div>
+    <!-- Vietnam Pivot -->
+    <div class="document-card p-8 border-l-4 border-[#caa829] bg-[#fbfbf0]/50">
+        <h3 class="font-headline-md text-headline-md text-[#caa829] mb-4 flex items-center gap-2">
+            <span class="material-symbols-outlined">trending_up</span> Northern Vietnam Pivot
+        </h3>
+        <ul class="space-y-4 font-body-md text-on-surface-variant">
+            <li class="flex items-start gap-2"><span class="text-primary font-bold">✓</span> Strong ESL teaching demand (R28,000 - R45,000 starting packages).</li>
+            <li class="flex items-start gap-2"><span class="text-primary font-bold">✓</span> Extremely low living expenses (R4,500 apartments, R100 premium meals).</li>
+            <li class="flex items-start gap-2"><span class="text-primary font-bold">✓</span> Safe environment (crime rates 20x lower than SA; walk freely at midnight).</li>
+            <li class="flex items-start gap-2"><span class="text-primary font-bold">✓</span> High savings potential (educators regularly save 50% - 60% of income).</li>
+        </ul>
+    </div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter items-stretch">
+<div class="col-span-full mb-8">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Key Financial Deliverables</h3>
+<div class="dossier-line mb-6"></div>
+</div>
+<!-- More Money -->
+<div class="document-card p-unit*4 flex flex-col p-8">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="payments">payments</span>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">More Money</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                        Experience a starting salary of <span class="font-bold text-primary">R28,000 - R45,000</span> per month with structured increases and performance bonuses.
+                    </p>
+<div class="mt-6 pt-6 border-t border-outline/10 font-label-caps text-primary">
+                        AVERAGE 180% INCREASE OVER SA SALARIES
+                    </div>
+</div>
+<!-- Less Expenses -->
+<div class="document-card p-unit*4 flex flex-col p-8">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="account_balance_wallet">account_balance_wallet</span>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Less Expenses</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                        Cost of living is significantly lower. Professional apartments for <span class="font-bold text-primary">R4,500</span> and premium dining for under <span class="font-bold text-primary">R100</span>.
+                    </p>
+<div class="mt-6 pt-6 border-t border-outline/10 font-label-caps text-primary">
+                        SAVE UP TO 60% OF MONTHLY INCOME
+                    </div>
+</div>
+<!-- Safety -->
+<div class="document-card p-unit*4 flex flex-col p-8">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="verified_user">verified_user</span>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Safety &amp; Peace</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                        Walk the streets at midnight with absolute confidence. Vietnam is consistently ranked as one of the safest destinations for expats globally.
+                    </p>
+<div class="mt-6 pt-6 border-t border-outline/10 font-label-caps text-primary">
+                        100% LOW CRIME ENVIRONMENT
+                    </div>
+</div>
+</div>
+</section>
+<!-- Why South Africans Choose Vietnam (Triggers) -->
+<section class="py-24 px-margin-desktop bg-[#fbfbf0]/30 border-t border-b border-outline/10">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="stamp-border text-primary mb-4 mx-auto">The Lifestyle Pivot</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Why South Africans Choose Vietnam</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mt-4">Trading local stagnation for financial safety and lifestyle autonomy.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+    <!-- Financial Freedom -->
+    <div class="document-card p-8 flex flex-col hover:shadow-lg transition-all rounded-lg">
+        <span class="material-symbols-outlined text-primary text-4xl mb-4">payments</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-3">Financial Freedom</h3>
+        <p class="font-body-md text-on-surface-variant">English teachers earn from <span class="font-bold text-primary">ZAR 28,000 to ZAR 55,000</span> per month. With living costs around R10,000/mo, you can save R18,000 - R35,000+ monthly.</p>
+    </div>
+    <!-- Absolute Safety -->
+    <div class="document-card p-8 flex flex-col hover:shadow-lg transition-all rounded-lg">
+        <span class="material-symbols-outlined text-primary text-4xl mb-4">gpp_good</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-3">Absolute Safety</h3>
+        <p class="font-body-md text-on-surface-variant">Crime rates are <span class="font-bold text-primary">20 times lower</span> than South Africa. Walk home freely at midnight with your phone out—zero constant security anxiety.</p>
+    </div>
+    <!-- Zero Load-Shedding -->
+    <div class="document-card p-8 flex flex-col hover:shadow-lg transition-all rounded-lg">
+        <span class="material-symbols-outlined text-primary text-4xl mb-4">bolt</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-3">Zero Load-Shedding</h3>
+        <p class="font-body-md text-on-surface-variant">Enjoy uninterrupted electricity, high-speed fiber internet, and stable infrastructure. No grids shutting down, no scheduled power cuts.</p>
+    </div>
+    <!-- Dirt-Cheap Dining -->
+    <div class="document-card p-8 flex flex-col hover:shadow-lg transition-all rounded-lg">
+        <span class="material-symbols-outlined text-primary text-4xl mb-4">restaurant</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-3">Dirt-Cheap Dining</h3>
+        <p class="font-body-md text-on-surface-variant">Savor high-quality local Pho and Banh Mi for R30, or sit down for a full international gourmet dinner for under R120. Cooking is optional here.</p>
+    </div>
+    <!-- Tropical Weather -->
+    <div class="document-card p-8 flex flex-col hover:shadow-lg transition-all rounded-lg">
+        <span class="material-symbols-outlined text-primary text-4xl mb-4">wb_sunny</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-3">Tropical Climate</h3>
+        <p class="font-body-md text-on-surface-variant">Skip the freezing South African winter. Enjoy a tropical climate with endless summers, outdoor cafe cultures, and warm evening strolls.</p>
+    </div>
+    <!-- Weekend Tourism -->
+    <div class="document-card p-8 flex flex-col hover:shadow-lg transition-all rounded-lg">
+        <span class="material-symbols-outlined text-primary text-4xl mb-4">explore</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-3">Backyard Tourism</h3>
+        <p class="font-body-md text-on-surface-variant">Take cheap weekend flights or train rides to the terraced fields of Sapa, the karsts of Ha Long Bay, or pristine beaches down the coast.</p>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- Relocation Hurdles Resolved Section -->
+<section class="py-24 px-margin-desktop bg-white">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-caps text-primary uppercase mb-2 block tracking-widest">Administrative Mastery</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Relocation Hurdles Resolved</h2>
+<div class="h-1 w-24 bg-primary mx-auto"></div>
+<p class="text-on-surface-variant max-w-xl mx-auto mt-4">We take care of the heavy administrative friction so you can focus on packing your bags.</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter items-stretch">
+    <!-- Red Tape Card -->
+    <div class="bg-surface-container-low p-8 flex flex-col h-full rounded-lg border border-outline/10">
+        <span class="material-symbols-outlined text-primary text-4xl mb-4">assignment_turned_in</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-3">DIRCO &amp; Document Bureaucracy</h3>
+        <p class="font-body-md text-on-surface-variant flex-grow">
+            We guide you through the South African police clearance, DIRCO legalization, SAQA verifications, and Vietnamese Embassy stamps.
+        </p>
+        <span class="text-xs font-label-caps text-secondary mt-6 font-semibold block uppercase">NO PAPERWORK BLOCKS</span>
+    </div>
+    <!-- No Experience Card -->
+    <div class="bg-surface-container-low p-8 flex flex-col h-full rounded-lg border border-outline/10">
+        <span class="material-symbols-outlined text-primary text-4xl mb-4">school</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-3">No Prior Teaching Experience</h3>
+        <p class="font-body-md text-on-surface-variant flex-grow">
+            We provide a fully accredited 120-Hour TEFL course and structured training videos that walk you through lesson planning, classroom games, and video-based demo preparation.
+        </p>
+        <span class="text-xs font-label-caps text-secondary mt-6 font-semibold block uppercase">NO PREVIOUS DEGREE MANDATE</span>
+    </div>
+    <!-- Ground Setup Card -->
+    <div class="bg-surface-container-low p-8 flex flex-col h-full rounded-lg border border-outline/10">
+        <span class="material-symbols-outlined text-primary text-4xl mb-4">handshake</span>
+        <h3 class="font-headline-md text-headline-md text-primary mb-3">Arrival &amp; Ground Setup</h3>
+        <p class="font-body-md text-on-surface-variant flex-grow">
+            From the moment you touch down, our local team coordinates airport concierge, custom apartment tours, local SIM setups, and bank account onboarding.
+        </p>
+        <span class="text-xs font-label-caps text-secondary mt-6 font-semibold block uppercase">FULL GROUND INTEGRATION</span>
+    </div>
+</div>
+<div class="text-center mt-12">
+    <a class="financial-cta px-10 py-4 rounded font-label-caps text-label-caps uppercase font-bold text-xs inline-block" href="apply.html">Start Relocation Assessment</a>
+</div>
+</div>
+</section>
+<!-- Pricing/Packages (From DOCUMENT_9 Logic) -->
+<!-- Featured Testimonials Section -->
+<section class="py-24 bg-white border-t border-outline/10">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-caps text-primary uppercase mb-2 block tracking-widest">Expat Validation</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Relocated South African Voices</h2>
+<div class="h-1 w-24 bg-primary mx-auto"></div>
+<p class="text-on-surface-variant max-w-xl mx-auto mt-4">
+    Hear from South Africans who successfully transitioned, earned, and saved in Northern Vietnam with our local operational support.
+</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-stretch mb-12">
+    <!-- Testimonial 1 -->
+    <div class="document-card p-8 flex flex-col justify-between hover:shadow-lg transition-all rounded-lg">
+        <blockquote class="font-body-md text-on-surface-variant italic mb-6">
+            "The visa paperwork felt overwhelming, but the team at Lekker Abroad handles the details. Now I teach in Hanoi, earn over R42,000/mo, and save more than half of it. It's the best financial decision I've ever made."
+        </blockquote>
+        <div>
+            <div class="dossier-line mb-4"></div>
+            <div class="flex justify-between items-center">
+                <div>
+                    <h4 class="font-bold text-primary">Duran Naidoo</h4>
+                    <span class="text-xs text-on-surface-variant">Durban to Hanoi</span>
+                </div>
+                <div class="text-right text-xs font-semibold text-[#caa829]">
+                    Starting: ~R42,000/mo
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial 2 -->
+    <div class="document-card p-8 flex flex-col justify-between hover:shadow-lg transition-all rounded-lg">
+        <blockquote class="font-body-md text-on-surface-variant italic mb-6">
+            "As a single woman, safety was my main concern. In Ha Long, I walk around freely at night. The ground team helped me find my apartment and set up my local bank account on day one."
+        </blockquote>
+        <div>
+            <div class="dossier-line mb-4"></div>
+            <div class="flex justify-between items-center">
+                <div>
+                    <h4 class="font-bold text-primary">Zanele Dlamini</h4>
+                    <span class="text-xs text-on-surface-variant">Johannesburg to Ha Long</span>
+                </div>
+                <div class="text-right text-xs font-semibold text-[#caa829]">
+                    Starting: ~R45,000/mo
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <a class="oxblood-outline-btn px-8 py-3 rounded font-label-caps text-label-caps uppercase font-bold text-xs inline-block" href="testimonials.html">Read All Verified Testimonials</a>
+</div>
+</div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="py-24 bg-primary text-white relative overflow-hidden">
+<div class="px-margin-desktop max-w-container-max mx-auto text-center relative z-10">
+    <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">Ready to Start Your Relocation Dossier?</h2>
+    <p class="font-body-lg text-body-lg mb-10 opacity-90 max-w-xl mx-auto leading-relaxed">
+        Take the first step toward teaching, earning, and saving in Northern Vietnam. Complete our 2-minute eligibility assessment to launch your transition plan.
+    </p>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+        <a class="bg-[#caa829] text-[#1b1c19] px-12 py-5 rounded font-label-caps text-label-caps uppercase w-full md:w-auto text-lg text-center font-bold shadow-md hover:scale-[1.02] transition-transform inline-block" href="apply.html">Start Relocation Assessment</a>
+        <a class="border border-white/30 px-12 py-5 rounded font-label-caps text-label-caps uppercase w-full md:w-auto hover:bg-white/10 transition-all text-center inline-block font-bold text-white" href="pricing.html">Explore Support Packages</a>
+    </div>
+    <p class="mt-8 font-caption opacity-60">No initial fees or commitment required. We verify your document readiness first.</p>
+</div>
+<!-- Decorative passport watermarks -->
+<div class="absolute top-0 right-0 w-64 h-64 border border-white/5 rounded-full -mr-32 -mt-32 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 border border-white/5 rounded-full -ml-48 -mb-48 pointer-events-none"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-primary dark:bg-primary-container border-t border-outline text-on-primary dark:text-on-primary-container">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="flex flex-col gap-4">
+<span class="font-headline-lg text-headline-lg text-on-primary">Lekker Abroad</span>
+<p class="font-body-md opacity-80">Connecting South African excellence with Vietnamese educational opportunities since 2021.</p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps opacity-60">Navigation</span>
+<nav class="flex flex-col gap-2 text-sm">
+<a class="text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="about.html">About</a>
+<a class="text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="resources.html">Training</a>
+<a class="text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="pricing.html">Packages</a>
+<a class="text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="testimonials.html">Testimonials</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps opacity-60">Follow the Journey</span>
+<div class="flex gap-4">
+<a class="font-caption text-caption text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="#">Instagram</a>
+<a class="font-caption text-caption text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="#">Facebook</a>
+<a class="font-caption text-caption text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="#">LinkedIn</a>
+</div>
+<p class="mt-auto font-caption opacity-60">© 2024 Lekker Abroad. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for cards
+        document.querySelectorAll('.document-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+                card.style.transition = 'transform 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Simple scroll observer for animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(section);
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        if (menuBtn && mobileNav) {
+            menuBtn.addEventListener('click', () => {
+                if (mobileNav.classList.contains('hidden')) {
+                    mobileNav.classList.remove('hidden');
+                    mobileNav.classList.add('flex');
+                } else {
+                    mobileNav.classList.add('hidden');
+                    mobileNav.classList.remove('flex');
+                }
+            });
+        }
+    </script>
+</body></html>

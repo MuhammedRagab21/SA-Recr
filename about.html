@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Lekker Abroad</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600&family=Geist:wght@600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Hanken+Grotesk:wght@100..900&family=Libre+Caslon+Text:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .stamp-border {
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgba(62, 0, 0, 0.15);
+        }
+        .dossier-line::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            width: 1px;
+            height: 3rem;
+            background-color: #3e0000;
+            opacity: 0.2;
+        }
+        .paper-texture {
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+        }
+        .route-blue-btn {
+            background-color: #800000 !important;
+            color: white !important;
+            transition: all 0.2s ease;
+        }
+        .route-blue-btn:hover {
+            background-color: #600000 !important;
+            transform: translateY(-1px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "outline-variant": "#dfbfba",
+                        "on-primary-container": "#f56b58",
+                        "primary-container": "#660000",
+                        "on-surface-variant": "#58413e",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e4e2dd",
+                        "on-error-container": "#93000a",
+                        "outline": "#8c716d",
+                        "tertiary": "#725c00",
+                        "surface-tint": "#aa3527",
+                        "on-surface": "#1b1c19",
+                        "secondary-fixed": "#e5e2e1",
+                        "inverse-surface": "#30312e",
+                        "secondary-container": "#e2dfde",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#231b00",
+                        "background": "#fbf9f4",
+                        "tertiary-container": "#caa829",
+                        "surface": "#fbf9f4",
+                        "on-background": "#1b1c19",
+                        "secondary": "#5f5e5e",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#410000",
+                        "surface-container": "#f0eee9",
+                        "surface-bright": "#fbf9f4",
+                        "tertiary-fixed-dim": "#e8c344",
+                        "on-tertiary-fixed-variant": "#564500",
+                        "inverse-on-surface": "#f2f1ec",
+                        "tertiary-fixed": "#ffe081",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "on-primary-fixed-variant": "#891d12",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#eae8e3",
+                        "surface-variant": "#e4e2dd",
+                        "surface-container-low": "#f5f3ee",
+                        "on-tertiary-container": "#4e3e00",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#636262",
+                        "primary": "#3e0000",
+                        "on-secondary-fixed-variant": "#474746",
+                        "inverse-primary": "#ffb4a8",
+                        "surface-dim": "#dbdad5",
+                        "primary-fixed": "#ffdad4",
+                        "on-secondary-fixed": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Libre Caslon Text"],
+                        "label-caps": ["Geist"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "caption": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "caption": ["13px", {"lineHeight": "18px", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-primary overflow-x-hidden">
+<!-- TopAppBar -->
+<nav class="w-full top-0 sticky bg-surface border-b border-outline/15 z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md text-primary uppercase tracking-widest" href="index.html">Lekker Abroad</a>
+<div class="hidden md:flex items-center gap-8 font-body-md text-body-md">
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="resources.html">Training</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="pricing.html">Packages</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="testimonials.html">Testimonials</a>
+<a class="route-blue-btn px-6 py-2 rounded font-label-caps text-label-caps uppercase" href="apply.html">Apply Now</a>
+</div>
+<button class="md:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<!-- Mobile Navigation Menu -->
+<div class="hidden w-full bg-surface border-b border-outline/15 px-margin-desktop py-4 flex-col gap-4 md:hidden" id="mobile-nav">
+    <a class="font-body-md text-body-md text-primary font-bold py-2" href="about.html">About</a>
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="resources.html">Training</a>
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="pricing.html">Packages</a>
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="testimonials.html">Testimonials</a>
+    <a class="route-blue-btn px-6 py-2 rounded font-label-caps text-label-caps uppercase text-center block" href="apply.html">Apply Now</a>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24 paper-texture">
+<!-- Hero Section: The Dossier Header -->
+<header class="mb-16 md:mb-24 relative">
+<div class="flex flex-col gap-4 max-w-2xl">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase flex items-center gap-2">
+<span class="w-8 h-px bg-primary/30"></span> Our Story
+                </span>
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-primary leading-tight">
+                    From the Highveld to the Highlands of Northern Vietnam.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    We aren't just relocation agents; we are teachers who walked this path before you. Lekker Abroad was born from a desire to provide the South African community with the honest, authoritative guidance we wished we had.
+                </p>
+</div>
+<div class="absolute top-0 right-0 hidden lg:block w-64 h-64 opacity-95 rotate-2 stamp-border p-1.5 bg-white shadow-sm z-10">
+    <img src="journey_map.png" alt="Journey from South Africa to Vietnam Map" class="w-full h-full object-cover rounded"/>
+</div>
+</header>
+<!-- Main Narrative: Asymmetric Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center mb-24">
+<div class="md:col-span-7 relative group">
+<div class="absolute inset-0 border border-primary/10 translate-x-3 translate-y-3 -z-10 transition-transform group-hover:translate-x-1 group-hover:translate-y-1"></div>
+<img alt="Scenic terraced fields in Sapa, Northern Vietnam." class="w-full h-auto rounded stamp-border" src="sapa_landscape.png"/>
+<div class="absolute -bottom-6 -right-6 bg-surface p-4 border border-outline/20 hidden md:block">
+<span class="font-label-caps text-[10px] text-on-surface-variant block mb-1">FIELD DOCUMENTATION</span>
+<span class="font-body-md italic text-primary">Sapa, Northern Vietnam</span>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col gap-8">
+<div class="p-8 bg-surface-container-low border border-outline-variant/30">
+<h2 class="font-headline-md text-headline-md text-primary mb-4 italic">The 'Northern' Specialization</h2>
+<p class="text-on-surface-variant mb-6">
+                        We chose Northern Vietnam for its soul—the mist over Sapa, the chaotic charm of the Old Quarter, and the immense opportunities for qualified educators. By focusing exclusively on this region, we offer a level of expertise and on-the-ground support that nationwide agencies simply cannot match.
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-px bg-outline"></div>
+<span class="font-label-caps text-label-caps uppercase text-secondary">Authorized Regional Experts</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Team Values: Bento Grid style -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-24">
+<div class="md:col-span-1 p-8 border border-outline/10 bg-white flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
+<h3 class="font-headline-md text-headline-md">Saffa to Saffa</h3>
+<p class="text-on-surface-variant">We speak your language—literally and figuratively. From understanding SA tax implications to finding the best spot for a braai in Northern Vietnam, we've got you covered.</p>
+</div>
+<div class="md:col-span-1 p-8 border border-outline/10 bg-white flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+<h3 class="font-headline-md text-headline-md">Teacher Led</h3>
+<p class="text-on-surface-variant">Our founders are career educators. We vet schools not just for salary, but for classroom environment, contract integrity, and professional growth.</p>
+</div>
+<div class="md:col-span-1 p-8 border border-outline/10 bg-white flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">map</span>
+<h3 class="font-headline-md text-headline-md">Boots on the Ground</h3>
+<p class="text-on-surface-variant">We live here. When you land, you aren't just getting an email—you're getting a local team that knows exactly where the best apartments and hidden gems are.</p>
+</div>
+</section>
+<!-- Trust Dossier: Process steps -->
+<section class="bg-primary text-on-primary p-8 md:p-16 mb-24 relative overflow-hidden">
+<div class="absolute right-0 top-0 opacity-5 -rotate-12 translate-x-1/4">
+<span class="material-symbols-outlined text-[400px]">history_edu</span>
+</div>
+<div class="relative z-10 max-w-3xl">
+<h2 class="font-headline-lg text-headline-lg mb-8">Our Professional Commitment</h2>
+<div class="space-y-12">
+<div class="flex gap-6 relative">
+<div class="flex-shrink-0 w-8 h-8 rounded-full border border-on-primary flex items-center justify-center font-label-caps">01</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Honest Consultation</h4>
+<p class="opacity-80">No sugar-coating. We tell you exactly what to expect regarding the transition, the culture, and the savings potential.</p>
+</div>
+</div>
+<div class="flex gap-6 relative">
+<div class="flex-shrink-0 w-8 h-8 rounded-full border border-on-primary flex items-center justify-center font-label-caps">02</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Legal Accuracy</h4>
+<p class="opacity-80">Visa laws in Vietnam change frequently. We handle the paperwork with meticulous attention to detail to ensure your safety.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-8 h-8 rounded-full border border-on-primary flex items-center justify-center font-label-caps">03</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Community Integration</h4>
+<p class="opacity-80">You're joining a family. Our WhatsApp groups and regular meetups ensure you never feel isolated in your new home.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-24 bg-primary text-white relative overflow-hidden">
+<div class="px-margin-desktop max-w-container-max mx-auto text-center relative z-10">
+    <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">Ready to Start Your Relocation Dossier?</h2>
+    <p class="font-body-lg text-body-lg mb-10 opacity-90 max-w-xl mx-auto leading-relaxed">
+        Take the first step toward teaching, earning, and saving in Northern Vietnam. Complete our 2-minute eligibility assessment to launch your transition plan.
+    </p>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+        <a class="bg-[#caa829] text-[#1b1c19] px-12 py-5 rounded font-label-caps text-label-caps uppercase w-full md:w-auto text-lg text-center font-bold shadow-md hover:scale-[1.02] transition-transform inline-block" href="apply.html">Start Relocation Assessment</a>
+        <a class="border border-white/30 px-12 py-5 rounded font-label-caps text-label-caps uppercase w-full md:w-auto hover:bg-white/10 transition-all text-center inline-block font-bold text-white" href="pricing.html">Explore Support Packages</a>
+    </div>
+    <p class="mt-8 font-caption opacity-60">No initial fees or commitment required. We verify your document readiness first.</p>
+</div>
+<!-- Decorative passport watermarks -->
+<div class="absolute top-0 right-0 w-64 h-64 border border-white/5 rounded-full -mr-32 -mt-32 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 border border-white/5 rounded-full -ml-48 -mb-48 pointer-events-none"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-primary border-t border-outline text-on-primary">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="flex flex-col gap-4">
+<span class="font-headline-lg text-headline-lg text-on-primary uppercase tracking-tighter">Lekker Abroad</span>
+<p class="font-caption text-caption opacity-70">Expert relocation guidance for South Africans moving to Northern Vietnam. Professional. Personal. Proven.</p>
+</div>
+<div class="flex flex-col gap-2 font-caption text-caption">
+<span class="font-label-caps mb-2 opacity-50 uppercase">Navigation</span>
+<a class="text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="about.html">About</a>
+<a class="text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="resources.html">Training</a>
+<a class="text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="pricing.html">Packages</a>
+<a class="text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="testimonials.html">Testimonials</a>
+</div>
+<div class="flex flex-col gap-2 font-caption text-caption">
+<span class="font-label-caps mb-2 opacity-50 uppercase">Connect</span>
+<a class="text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="#">Instagram</a>
+<a class="text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="#">Facebook</a>
+<a class="text-on-primary/80 hover:text-tertiary-fixed transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+<div class="border-t border-on-primary/10 py-6 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center font-caption text-caption opacity-50">
+            © 2026 Lekker Abroad. All rights reserved.
+        </div>
+</footer>
+<script>
+        // Subtle micro-interaction for images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('mouseenter', () => {
+                img.style.transform = 'scale(1.02)';
+            });
+            img.addEventListener('mouseleave', () => {
+                img.style.transform = 'scale(1)';
+            });
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        if (menuBtn && mobileNav) {
+            menuBtn.addEventListener('click', () => {
+                if (mobileNav.classList.contains('hidden')) {
+                    mobileNav.classList.remove('hidden');
+                    mobileNav.classList.add('flex');
+                } else {
+                    mobileNav.classList.add('hidden');
+                    mobileNav.classList.remove('flex');
+                }
+            });
+        }
+    </script>
+</body></html>

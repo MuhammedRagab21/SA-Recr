@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lekker Abroad | Service Packages</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;family=Geist:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "outline-variant": "#dfbfba",
+                        "on-primary-container": "#f56b58",
+                        "primary-container": "#660000",
+                        "on-surface-variant": "#58413e",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e4e2dd",
+                        "on-error-container": "#93000a",
+                        "outline": "#8c716d",
+                        "tertiary": "#725c00",
+                        "surface-tint": "#aa3527",
+                        "on-surface": "#1b1c19",
+                        "secondary-fixed": "#e5e2e1",
+                        "inverse-surface": "#30312e",
+                        "secondary-container": "#e2dfde",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#231b00",
+                        "background": "#fbf9f4",
+                        "tertiary-container": "#caa829",
+                        "surface": "#fbf9f4",
+                        "on-background": "#1b1c19",
+                        "secondary": "#5f5e5e",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#410000",
+                        "surface-container": "#f0eee9",
+                        "surface-bright": "#fbf9f4",
+                        "tertiary-fixed-dim": "#e8c344",
+                        "on-tertiary-fixed-variant": "#564500",
+                        "inverse-on-surface": "#f2f1ec",
+                        "tertiary-fixed": "#ffe081",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "on-primary-fixed-variant": "#891d12",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#eae8e3",
+                        "surface-variant": "#e4e2dd",
+                        "surface-container-low": "#f5f3ee",
+                        "on-tertiary-container": "#4e3e00",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#636262",
+                        "primary": "#3e0000",
+                        "on-secondary-fixed-variant": "#474746",
+                        "inverse-primary": "#ffb4a8",
+                        "surface-dim": "#dbdad5",
+                        "primary-fixed": "#ffdad4",
+                        "on-secondary-fixed": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Libre Caslon Text"],
+                        "label-caps": ["Geist"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "caption": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "caption": ["13px", {"lineHeight": "18px", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .paper-texture {
+            background-color: #fbf9f4;
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+        }
+        .ink-border {
+            border: 1px solid rgba(27, 28, 25, 0.15);
+        }
+        .stamp-shadow {
+            box-shadow: inset 0 0 10px rgba(62, 0, 0, 0.05);
+        }
+        .dossier-line {
+            position: relative;
+        }
+        .dossier-line::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: #8c716d;
+            opacity: 0.3;
+            z-index: 0;
+        }
+        .route-blue-btn {
+            background-color: #800000 !important;
+            color: white !important;
+            transition: all 0.2s ease;
+        }
+        .route-blue-btn:hover {
+            background-color: #600000 !important;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-primary">
+<!-- TopAppBar -->
+<nav class="w-full top-0 sticky bg-surface border-b border-outline/15 z-50">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md text-primary uppercase tracking-widest" href="index.html">
+                Lekker Abroad
+            </a>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors duration-200" href="about.html">About</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors duration-200" href="resources.html">Training</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="pricing.html">Packages</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors duration-200" href="testimonials.html">Testimonials</a>
+<a class="route-blue-btn px-6 py-2 rounded font-label-caps text-label-caps uppercase" href="apply.html">Apply Now</a>
+</div>
+<button class="md:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<!-- Mobile Navigation Menu -->
+<div class="hidden w-full bg-surface border-b border-outline/15 px-margin-desktop py-4 flex-col gap-4 md:hidden" id="mobile-nav">
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="about.html">About</a>
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="resources.html">Training</a>
+    <a class="font-body-md text-body-md text-primary font-bold py-2" href="pricing.html">Packages</a>
+    <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="testimonials.html">Testimonials</a>
+    <a class="route-blue-btn px-6 py-2 rounded font-label-caps text-label-caps uppercase text-center block" href="apply.html">Apply Now</a>
+</div>
+</nav>
+<main class="paper-texture">
+<!-- Hero Section: Guided Pathway -->
+<section class="relative pt-20 pb-32 overflow-hidden border-b border-outline/10">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 z-10">
+<span class="font-label-caps text-primary tracking-widest uppercase mb-4 block">Official Relocation Dossier</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-6 leading-tight">
+                        Transparent Investment. <br/><span class="italic font-normal">Guaranteed Results.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+                        Relocating shouldn't be a financial risk. Our packages operate on a dual-payment structure: a low upfront fee to launch your dossiers, and the post-placement balance paid over 12–24 months—beginning only after you receive your first salary in Vietnam.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded font-label-caps uppercase tracking-wider hover:opacity-90 transition-all text-center inline-block font-bold shadow-md" href="#tiers">
+                            Explore Support Tiers
+</a>
+<a class="border border-primary text-primary px-8 py-4 rounded font-label-caps uppercase tracking-wider hover:bg-primary/5 transition-all text-center inline-block font-bold" href="apply.html">
+                            Start Relocation Assessment
+</a>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="relative ink-border p-2 bg-white rotate-2 shadow-sm">
+<img alt="Relocation Landscape" class="w-full h-auto grayscale-[0.2] contrast-[1.1] rounded" src="sapa_landscape.png"/>
+<div class="absolute -bottom-4 -right-4 bg-primary text-on-primary p-4 font-label-caps tracking-tighter">
+                            PASSPORT UNLOCKED 2026
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tier Deep Dive -->
+<section id="tiers" class="py-24 bg-surface-container-low border-b border-outline/10">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<span class="font-label-caps text-primary uppercase mb-2 block tracking-widest">Support Options</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Relocation Tiers</h2>
+<div class="h-1 w-24 bg-primary mx-auto mb-6"></div>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Select the level of professional support required for your international transition. All packages include standard documentation templates.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter items-stretch pt-4">
+<!-- Starter Tier -->
+<div class="bg-white border border-outline/10 p-10 flex flex-col h-full hover:shadow-lg transition-all rounded-xl relative">
+    <div class="mb-8">
+        <span class="font-label-caps text-secondary text-xs uppercase px-3 py-1 border border-secondary/30 rounded-full">Essential Support</span>
+        <h3 class="font-headline-md text-headline-md mt-4 text-primary font-bold">The Starter</h3>
+        <p class="text-xs text-on-surface-variant mt-2">For independent candidates who need the tools but handle application delivery themselves.</p>
+    </div>
+    <div class="mb-10 flex-grow">
+        <div class="border-y border-outline/10 py-6 mb-6">
+            <span class="text-caption text-secondary block font-semibold mb-1">Upfront Administrative Fee</span>
+            <div class="text-headline-lg text-primary font-bold mb-1">$450 <span class="text-body-md font-normal opacity-60">/ R7,500 ZAR</span></div>
+            <span class="text-caption text-secondary block font-semibold mt-4 mb-1">Post-Placement Balance</span>
+            <div class="text-xl text-[#caa829] font-bold">135,000,000 VND</div>
+            <span class="text-[10px] text-on-surface-variant leading-relaxed">Paid over 12 months after starting your teaching role.</span>
+        </div>
+        <ul class="space-y-4">
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">120-Hour Accredited TEFL Course Included</span></li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">700+ School/Center Application Database</span></li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">Full Northern Vietnam Relocation Roadmap</span></li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">3 Months WhatsApp Text Support</span></li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">Airport Pickup &amp; Check-In Support</span></li>
+        </ul>
+    </div>
+    <a class="w-full border border-primary text-primary py-4 rounded font-label-caps uppercase hover:bg-primary/5 text-center inline-block font-bold mt-auto transition-all text-xs" href="apply.html?package=Starter">Select Starter</a>
+</div>
+
+<!-- Premium Tier -->
+<div class="bg-white border-2 border-primary p-10 flex flex-col h-full relative rounded-xl shadow-md lg:scale-105 z-10">
+    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-on-primary px-4 py-1 text-[10px] font-label-caps tracking-widest uppercase rounded">Most Recommended</div>
+    <div class="mb-8">
+        <span class="font-label-caps text-primary text-xs uppercase px-3 py-1 border border-primary/30 rounded-full font-bold">Done-For-You Placement</span>
+        <h3 class="font-headline-md text-headline-md mt-4 text-primary font-bold">The Premium</h3>
+        <p class="text-xs text-on-surface-variant mt-2">Our flagship package. Full ground coordination, interview matches, and placement guarantee.</p>
+    </div>
+    <div class="mb-10 flex-grow">
+        <div class="border-y border-outline/10 py-6 mb-6">
+            <span class="text-caption text-secondary block font-semibold mb-1">Upfront Administrative Fee</span>
+            <div class="text-headline-lg text-primary font-bold mb-1">$1,125 <span class="text-body-md font-normal opacity-60">/ R18,750 ZAR</span></div>
+            <span class="text-caption text-secondary block font-semibold mt-4 mb-1">Post-Placement Balance</span>
+            <div class="text-xl text-[#caa829] font-bold">180,000,000 VND</div>
+            <span class="text-[10px] text-on-surface-variant leading-relaxed">Paid over 12 months after starting your teaching role.</span>
+        </div>
+        <ul class="space-y-4">
+            <li class="flex items-start gap-3 font-bold text-primary"><span class="material-symbols-outlined text-sm mt-0.5">shield</span><span class="text-body-md text-xs">Job Placement Guarantee</span></li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">1-on-1 Dedicated Placement Consultant</span></li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">Done-For-You CV &amp; Teacher Profile Setup</span></li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">Done-For-You Applications &amp; Scheduling</span></li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">Guided Interview &amp; Demo Class Coaching</span></li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">Contract Negotiation &amp; Housing Assistance</span></li>
+        </ul>
+    </div>
+    <a class="w-full bg-primary text-on-primary py-4 rounded font-label-caps uppercase active:opacity-90 text-center inline-block font-bold mt-auto transition-all text-xs" href="apply.html?package=Premium">Secure Premium</a>
+</div>
+
+<!-- Diamond Tier -->
+<div class="bg-white border border-[#caa829]/30 p-10 flex flex-col h-full hover:shadow-lg transition-all rounded-xl relative">
+    <div class="mb-8">
+        <span class="font-label-caps text-tertiary text-xs uppercase px-3 py-1 border border-tertiary/30 rounded-full font-bold">VIP Concierge</span>
+        <h3 class="font-headline-md text-headline-md mt-4 text-primary font-bold">The Diamond</h3>
+        <p class="text-xs text-on-surface-variant mt-2">The ultimate relocation experience with premium living expenses covered on arrival.</p>
+    </div>
+    <div class="mb-10 flex-grow">
+        <div class="border-y border-outline/10 py-6 mb-6">
+            <span class="text-caption text-secondary block font-semibold mb-1">Upfront Administrative Fee</span>
+            <div class="text-headline-lg text-primary font-bold mb-1">$4,500 <span class="text-body-md font-normal opacity-60">/ R75,000 ZAR</span></div>
+            <span class="text-caption text-secondary block font-semibold mt-4 mb-1">Post-Placement Balance</span>
+            <div class="text-xl text-[#caa829] font-bold">360,000,000 VND</div>
+            <span class="text-[10px] text-on-surface-variant leading-relaxed">Paid over 24 months after starting your teaching role.</span>
+        </div>
+        <ul class="space-y-4">
+            <li class="flex items-start gap-3 font-bold text-tertiary"><span class="material-symbols-outlined text-sm mt-0.5">star</span><span class="text-body-md text-xs">Job + Minimum Salary Lock Guarantee</span></li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">3 Months Fully Paid Premium Accommodation</span></li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">3 Months Meals &amp; Transit Stipend Covered</span></li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">VIP Airport Concierge Meet &amp; Greet</span></li>
+            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span class="text-body-md text-xs">Unlimited consultation calls + 6 mos VIP support</span></li>
+        </ul>
+    </div>
+    <a class="w-full border-2 border-tertiary text-tertiary py-4 rounded font-label-caps uppercase hover:bg-tertiary/5 text-center inline-block font-bold mt-auto transition-all text-xs" href="apply.html?package=Diamond">Go Diamond</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Comparison Table -->
+<section class="py-24 max-w-container-max mx-auto px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12 text-center underline decoration-outline/20 underline-offset-8">Comparative Analysis</h2>
+<div class="overflow-x-auto ink-border bg-white rounded-lg shadow-sm">
+<table class="w-full border-collapse">
+<thead>
+<tr class="bg-surface-container-high border-b border-outline/30">
+<th class="p-6 text-left font-label-caps text-secondary uppercase tracking-widest border-r border-outline/15">Relocation Deliverable</th>
+<th class="p-6 text-center font-headline-md text-on-surface border-r border-outline/15">Starter</th>
+<th class="p-6 text-center font-headline-md text-primary bg-primary/5 border-r border-outline/15">Premium</th>
+<th class="p-6 text-center font-headline-md text-tertiary">Diamond</th>
+</tr>
+</thead>
+<tbody class="text-body-md">
+<tr class="border-b border-outline/10"><td class="p-6 font-bold text-on-surface border-r border-outline/15">Upfront Fee</td><td class="p-6 text-center border-r border-outline/15">$450 / R7,500</td><td class="p-6 text-center border-r border-outline/15 font-bold bg-primary/5">$1,125 / R18,750</td><td class="p-6 text-center font-bold">$4,500 / R75,000</td></tr>
+<tr class="border-b border-outline/10"><td class="p-6 font-bold text-on-surface border-r border-outline/15">Later Payment (VND)</td><td class="p-6 text-center border-r border-outline/15">135,000,000</td><td class="p-6 text-center border-r border-outline/15 bg-primary/5">180,000,000</td><td class="p-6 text-center">360,000,000</td></tr>
+<tr class="border-b border-outline/10">
+<td class="p-6 font-bold text-on-surface border-r border-outline/15">Job Placement</td>
+<td class="p-6 text-center border-r border-outline/15">Support / Resources</td>
+<td class="p-6 text-center border-r border-outline/15 text-primary font-bold bg-primary/5">Guaranteed Placement</td>
+<td class="p-6 text-center text-tertiary font-bold">Placement + Min Salary Lock</td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="p-6 font-bold text-on-surface border-r border-outline/15">TEFL Certification</td>
+<td class="p-6 text-center border-r border-outline/15">120-Hr Course Incl.</td>
+<td class="p-6 text-center border-r border-outline/15 bg-primary/5">120-Hr Course Incl.</td>
+<td class="p-6 text-center font-semibold text-tertiary">Specialist Training + TEFL</td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="p-6 font-bold text-on-surface border-r border-outline/15">Done-For-You CV &amp; Profile</td>
+<td class="p-6 text-center border-r border-outline/15">Review &amp; Templates</td>
+<td class="p-6 text-center border-r border-outline/15 text-primary bg-primary/5"><span class="material-symbols-outlined text-primary">check</span></td>
+<td class="p-6 text-center text-tertiary"><span class="material-symbols-outlined text-tertiary">check</span></td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="p-6 font-bold text-on-surface border-r border-outline/15">Done-For-You Applications</td>
+<td class="p-6 text-center border-r border-outline/15">Self-Applied (Database)</td>
+<td class="p-6 text-center border-r border-outline/15 text-primary bg-primary/5"><span class="material-symbols-outlined text-primary">check</span></td>
+<td class="p-6 text-center text-tertiary"><span class="material-symbols-outlined text-tertiary">check</span></td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="p-6 font-bold text-on-surface border-r border-outline/15">Work Permit &amp; Visa Guidance</td>
+<td class="p-6 text-center border-r border-outline/15">Templates &amp; Checklists</td>
+<td class="p-6 text-center border-r border-outline/15 bg-primary/5 text-primary">Guided Documents &amp; DIRCO Trackers</td>
+<td class="p-6 text-center text-tertiary font-bold">Priority Processing &amp; Ground Escort</td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="p-6 font-bold text-on-surface border-r border-outline/15">Salary Guarantee</td>
+<td class="p-6 text-center border-r border-outline/15">Market Average</td>
+<td class="p-6 text-center border-r border-outline/15 bg-primary/5">Placement Lock</td>
+<td class="p-6 text-center text-tertiary font-bold">Salary Lock (Minimum R28k equivalent)</td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="p-6 font-bold text-on-surface border-r border-outline/15">Accommodation</td>
+<td class="p-6 text-center border-r border-outline/15">Playbook Only</td>
+<td class="p-6 text-center border-r border-outline/15 bg-primary/5 font-semibold text-primary">Search &amp; Lease Review Assistance</td>
+<td class="p-6 text-center font-bold text-tertiary">3 Months Paid Premium</td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="p-6 font-bold text-on-surface border-r border-outline/15">Meals &amp; Transport Stipend</td>
+<td class="p-6 text-center border-r border-outline/15">—</td>
+<td class="p-6 text-center border-r border-outline/15 bg-primary/5">—</td>
+<td class="p-6 text-center font-bold text-tertiary">3 Months Covered</td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="p-6 font-bold text-on-surface border-r border-outline/15">Consultation &amp; Support</td>
+<td class="p-6 text-center border-r border-outline/15">2 Calls, 3 Mos Text</td>
+<td class="p-6 text-center border-r border-outline/15 bg-primary/5 text-primary">5 Calls, 3 Mos Priority WhatsApp</td>
+<td class="p-6 text-center font-bold text-tertiary">Unlimited Calls, 6 Mos VIP Support</td>
+</tr>
+<tr>
+<td class="p-6 font-bold text-on-surface border-r border-outline/15">Arrival Onboarding</td>
+<td class="p-6 text-center border-r border-outline/15">Check-In Guide</td>
+<td class="p-6 text-center border-r border-outline/15 bg-primary/5 text-primary">Private Driver Pickup</td>
+<td class="p-6 text-center font-bold text-tertiary">VIP Airport Concierge Meet</td>
+</tr>
+</tbody>
+</table>
+</div><p class="mt-4 text-caption text-secondary italic text-center">* Later payments begin only after the candidate receives their first salary in Vietnam.</p>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-24 bg-white border-t border-outline/10">
+<div class="max-w-4xl mx-auto px-margin-desktop">
+    <div class="text-center mb-16">
+        <span class="font-label-caps text-primary uppercase mb-2 block tracking-widest">Information Desk</span>
+        <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Frequently Asked Questions</h2>
+        <div class="h-1 w-24 bg-primary mx-auto"></div>
+    </div>
+    
+    <div class="space-y-6">
+        <!-- FAQ 1 -->
+        <details class="group border border-outline/15 rounded-lg bg-surface-container-low p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center cursor-pointer focus:outline-none">
+                <h4 class="font-bold text-primary font-body-lg">Why is there an upfront administrative fee?</h4>
+                <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+            </summary>
+            <div class="mt-4 text-sm text-on-surface-variant leading-relaxed border-t border-outline/10 pt-4">
+                The upfront administrative fee covers essential hard costs incurred before you arrive in Vietnam. This includes state-accredited TEFL course registration, done-for-you CV alignment, and administrative hours spent by our ground team vetting positions and routing templates.
+            </div>
+        </details>
+        
+        <!-- FAQ 2 -->
+        <details class="group border border-outline/15 rounded-lg bg-surface-container-low p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center cursor-pointer focus:outline-none">
+                <h4 class="font-bold text-primary font-body-lg">When do the post-placement installments begin?</h4>
+                <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+            </summary>
+            <div class="mt-4 text-sm text-on-surface-variant leading-relaxed border-t border-outline/10 pt-4">
+                Installments only begin once you are successfully placed in a school and have received your first full month's salary in Vietnam. Payments are paid in local VND or equivalent over a 12-month period (24 months for the Diamond package), allowing you to pay for your relocation out of your earnings.
+            </div>
+        </details>
+        
+        <!-- FAQ 3 -->
+        <details class="group border border-outline/15 rounded-lg bg-surface-container-low p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center cursor-pointer focus:outline-none">
+                <h4 class="font-bold text-primary font-body-lg">What happens if I don't get placed in a school?</h4>
+                <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+            </summary>
+            <div class="mt-4 text-sm text-on-surface-variant leading-relaxed border-t border-outline/10 pt-4">
+                For our Premium and Diamond packages, we offer a strict Job Placement Guarantee. If you meet the basic legal requirements (clean background check, valid bachelor's degree) and complete our training modules but do not secure a contract offer, we will refund your upfront administrative fee in full.
+            </div>
+        </details>
+        
+        <!-- FAQ 4 -->
+        <details class="group border border-outline/15 rounded-lg bg-surface-container-low p-6 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center cursor-pointer focus:outline-none">
+                <h4 class="font-bold text-primary font-body-lg">Are flights and visa processing fees included in the upfront cost?</h4>
+                <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+            </summary>
+            <div class="mt-4 text-sm text-on-surface-variant leading-relaxed border-t border-outline/10 pt-4">
+                No, upfront packages do not include flight tickets or direct government visa/legalization fees. These are personal costs. However, our ground team provides full administrative templates, DIRCO legalizing guidelines, and school sponsorship document routing to ensure you do not make costly administrative mistakes.
+            </div>
+        </details>
+    </div>
+</div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="py-24 bg-primary text-white relative overflow-hidden">
+<div class="px-margin-desktop max-w-container-max mx-auto text-center relative z-10">
+    <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">Ready to Start Your Relocation Dossier?</h2>
+    <p class="font-body-lg text-body-lg mb-10 opacity-90 max-w-xl mx-auto leading-relaxed">
+        Take the first step toward teaching, earning, and saving in Northern Vietnam. Complete our 2-minute eligibility assessment to launch your transition plan.
+    </p>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+        <a class="bg-[#caa829] text-[#1b1c19] px-12 py-5 rounded font-label-caps text-label-caps uppercase w-full md:w-auto text-lg text-center font-bold shadow-md hover:scale-[1.02] transition-transform inline-block" href="apply.html">Start Relocation Assessment</a>
+        <a class="border border-white/30 px-12 py-5 rounded font-label-caps text-label-caps uppercase w-full md:w-auto hover:bg-white/10 transition-all text-center inline-block font-bold text-white" href="pricing.html">Explore Support Packages</a>
+    </div>
+    <p class="mt-8 font-caption opacity-60">No initial fees or commitment required. We verify your document readiness first.</p>
+</div>
+<!-- Decorative passport watermarks -->
+<div class="absolute top-0 right-0 w-64 h-64 border border-white/5 rounded-full -mr-32 -mt-32 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 border border-white/5 rounded-full -ml-48 -mb-48 pointer-events-none"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-primary text-on-primary border-t border-outline">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop py-12 max-w-container-max mx-auto">
+<div>
+<div class="font-headline-lg text-headline-lg text-on-primary mb-6 uppercase">Lekker Abroad</div>
+<p class="font-caption text-caption opacity-80 max-w-xs">
+                    South Africa's premier gateway to living and teaching in Southeast Asia. Professionalism, reliability, and heritage.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-3">
+<h4 class="font-label-caps text-tertiary-fixed mb-2 uppercase">Navigation</h4>
+<a class="text-caption opacity-80 hover:text-tertiary-fixed transition-colors" href="about.html">About</a>
+<a class="text-caption opacity-80 hover:text-tertiary-fixed transition-colors" href="resources.html">Training</a>
+<a class="text-caption opacity-80 hover:text-tertiary-fixed transition-colors" href="pricing.html">Packages</a>
+<a class="text-caption opacity-80 hover:text-tertiary-fixed transition-colors" href="testimonials.html">Testimonials</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-caps text-tertiary-fixed mb-2 uppercase">Connect</h4>
+<a class="text-caption opacity-80 hover:text-tertiary-fixed transition-colors" href="#">Instagram</a>
+<a class="text-caption opacity-80 hover:text-tertiary-fixed transition-colors" href="#">Facebook</a>
+<a class="text-caption opacity-80 hover:text-tertiary-fixed transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+<div class="flex flex-col justify-between items-end">
+<div class="text-right text-xs">
+<span class="font-caption text-on-primary/80">SA HQ: Cape Town, South Africa</span><br/>
+<span class="font-caption text-on-primary/80">VN HQ: Hanoi, Northern Vietnam</span>
+</div>
+<div class="font-caption text-caption opacity-60 mt-8">
+                    © 2026 Lekker Abroad. All rights reserved.
+                </div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for table rows
+        document.querySelectorAll('tbody tr').forEach(row => {
+            row.addEventListener('mouseenter', () => {
+                row.classList.add('bg-primary/5');
+            });
+            row.addEventListener('mouseleave', () => {
+                row.classList.remove('bg-primary/5');
+            });
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        if (menuBtn && mobileNav) {
+            menuBtn.addEventListener('click', () => {
+                if (mobileNav.classList.contains('hidden')) {
+                    mobileNav.classList.remove('hidden');
+                    mobileNav.classList.add('flex');
+                } else {
+                    mobileNav.classList.add('hidden');
+                    mobileNav.classList.remove('flex');
+                }
+            });
+        }
+    </script>
+</body></html>

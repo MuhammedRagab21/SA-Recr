@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Apply Now | Lekker Abroad</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Geist:wght@400;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "secondary-fixed-dim": "#c8c6c5",
+                "outline-variant": "#dfbfba",
+                "on-primary-container": "#f56b58",
+                "primary-container": "#660000",
+                "on-surface-variant": "#58413e",
+                "on-tertiary": "#ffffff",
+                "surface-container-highest": "#e4e2dd",
+                "on-error-container": "#93000a",
+                "outline": "#8c716d",
+                "tertiary": "#725c00",
+                "surface-tint": "#aa3527",
+                "on-surface": "#1b1c19",
+                "secondary-fixed": "#e5e2e1",
+                "inverse-surface": "#30312e",
+                "secondary-container": "#e2dfde",
+                "error": "#ba1a1a",
+                "surface-container-lowest": "#ffffff",
+                "on-tertiary-fixed": "#231b00",
+                "background": "#fbf9f4",
+                "tertiary-container": "#caa829",
+                "surface": "#fbf9f4",
+                "on-background": "#1b1c19",
+                "secondary": "#5f5e5e",
+                "error-container": "#ffdad6",
+                "on-primary-fixed": "#410000",
+                "surface-container": "#f0eee9",
+                "surface-bright": "#fbf9f4",
+                "tertiary-fixed-dim": "#e8c344",
+                "on-tertiary-fixed-variant": "#564500",
+                "inverse-on-surface": "#f2f1ec",
+                "tertiary-fixed": "#ffe081",
+                "on-primary": "#ffffff",
+                "primary-fixed-dim": "#ffb4a8",
+                "on-primary-fixed-variant": "#891d12",
+                "on-secondary": "#ffffff",
+                "surface-container-high": "#eae8e3",
+                "surface-variant": "#e4e2dd",
+                "surface-container-low": "#f5f3ee",
+                "on-tertiary-container": "#4e3e00",
+                "on-error": "#ffffff",
+                "on-secondary-container": "#636262",
+                "primary": "#3e0000",
+                "on-secondary-fixed-variant": "#474746",
+                "inverse-primary": "#ffb4a8",
+                "surface-dim": "#dbdad5",
+                "primary-fixed": "#ffdad4",
+                "on-secondary-fixed": "#1c1b1b"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "container-max": "1200px",
+                "unit": "8px",
+                "gutter": "24px",
+                "margin-mobile": "20px",
+                "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                "body-md": ["Hanken Grotesk"],
+                "display-lg-mobile": ["Libre Caslon Text"],
+                "label-caps": ["Geist"],
+                "headline-lg": ["Libre Caslon Text"],
+                "display-lg": ["Libre Caslon Text"],
+                "caption": ["Hanken Grotesk"],
+                "body-lg": ["Hanken Grotesk"],
+                "headline-md": ["Libre Caslon Text"]
+            },
+            "fontSize": {
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "display-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "700"}],
+                "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "caption": ["13px", {"lineHeight": "18px", "fontWeight": "500"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        .paper-texture {
+            background-color: #fbf9f4;
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+        }
+        .stamp-border {
+            border: 2px solid #3e0000;
+            padding: 4px 8px;
+            text-transform: uppercase;
+            font-family: 'Geist', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            display: inline-block;
+        }
+        .dossier-line {
+            height: 1px;
+            background-color: rgba(62, 0, 0, 0.15);
+            width: 100%;
+        }
+        .route-blue-btn {
+            background-color: #800000 !important;
+            color: white !important;
+            transition: all 0.2s ease;
+        }
+        .route-blue-btn:hover {
+            background-color: #600000 !important;
+            transform: translateY(-1px);
+        }
+        .document-card {
+            background: #ffffff;
+            border: 1px solid rgba(26, 26, 26, 0.15);
+            transition: border-color 0.3s ease;
+        }
+        .document-card:hover {
+            border-color: #3e0000;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="paper-texture text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col">
+
+<!-- TopAppBar -->
+<nav class="w-full top-0 sticky bg-surface border-b border-outline/15 z-50">
+    <div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+        <a class="font-headline-md text-headline-md text-primary uppercase tracking-widest" href="index.html">
+            Lekker Abroad
+        </a>
+        <div class="hidden md:flex items-center gap-gutter">
+            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="about.html">About</a>
+            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="resources.html">Training</a>
+            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="pricing.html">Packages</a>
+            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="testimonials.html">Testimonials</a>
+            <a class="route-blue-btn px-6 py-2 rounded font-label-caps text-label-caps uppercase border border-transparent font-bold" href="apply.html">Apply Now</a>
+        </div>
+        <button class="md:hidden text-primary" id="mobile-menu-btn">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
+    <!-- Mobile Navigation Menu -->
+    <div class="hidden w-full bg-surface border-b border-outline/15 px-margin-desktop py-4 flex-col gap-4 md:hidden" id="mobile-nav">
+        <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="about.html">About</a>
+        <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="resources.html">Training</a>
+        <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="pricing.html">Packages</a>
+        <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary py-2" href="testimonials.html">Testimonials</a>
+        <a class="route-blue-btn px-6 py-2 rounded font-label-caps text-label-caps uppercase text-center block" href="apply.html">Apply Now</a>
+    </div>
+</nav>
+
+<main class="flex-grow flex items-center justify-center py-16 px-margin-mobile">
+    <div class="max-w-2xl w-full bg-white border border-outline/15 p-8 md:p-12 shadow-sm rounded-lg" id="form-container">
+        <!-- Form Header -->
+        <div class="mb-10">
+            <span class="stamp-border text-primary mb-4">Official Assessment</span>
+            <h1 class="font-display-lg text-3xl text-primary mt-2">Relocation & Placement Eligibility Form</h1>
+            <p class="font-body-md text-on-surface-variant mt-2">
+                Assess your eligibility for Northern Vietnam placement support. We will review your answers and get back to you within 24 hours.
+            </p>
+        </div>
+
+        <form id="eligibility-form" class="space-y-6">
+            <!-- Full Name -->
+            <div>
+                <label for="name" class="block font-label-caps text-[11px] text-primary uppercase tracking-widest mb-2">Full Name</label>
+                <input type="text" id="name" name="name" required class="w-full border border-outline/20 p-3 rounded bg-surface/50 focus:border-primary focus:ring-0 text-on-surface"/>
+            </div>
+
+            <!-- Email Address -->
+            <div>
+                <label for="email" class="block font-label-caps text-[11px] text-primary uppercase tracking-widest mb-2">Email Address</label>
+                <input type="email" id="email" name="email" required class="w-full border border-outline/20 p-3 rounded bg-surface/50 focus:border-primary focus:ring-0 text-on-surface"/>
+            </div>
+
+            <!-- WhatsApp Phone Number -->
+            <div>
+                <label for="whatsapp" class="block font-label-caps text-[11px] text-primary uppercase tracking-widest mb-2">WhatsApp Number (with country code)</label>
+                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="+27 ..." class="w-full border border-outline/20 p-3 rounded bg-surface/50 focus:border-primary focus:ring-0 text-on-surface"/>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Academic Degree Status -->
+                <div>
+                    <label for="degree" class="block font-label-caps text-[11px] text-primary uppercase tracking-widest mb-2">Academic Degree Status</label>
+                    <select id="degree" name="degree" required class="w-full border border-outline/20 p-3 rounded bg-surface/50 focus:border-primary focus:ring-0 text-on-surface">
+                        <option value="" disabled selected>Select status</option>
+                        <option value="Bachelors Degree or Higher">Bachelors Degree or Higher</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Matric/High School Only">Matric/High School Only</option>
+                        <option value="Other">Other / In Progress</option>
+                    </select>
+                </div>
+
+                <!-- TEFL Status -->
+                <div>
+                    <label for="tefl" class="block font-label-caps text-[11px] text-primary uppercase tracking-widest mb-2">TEFL Certificate Status</label>
+                    <select id="tefl" name="tefl" required class="w-full border border-outline/20 p-3 rounded bg-surface/50 focus:border-primary focus:ring-0 text-on-surface">
+                        <option value="" disabled selected>Select status</option>
+                        <option value="Yes, I have one">Yes, I have one</option>
+                        <option value="In progress">In progress</option>
+                        <option value="No, I need one">No, I need one</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Package Selection -->
+                <div>
+                    <label for="package" class="block font-label-caps text-[11px] text-primary uppercase tracking-widest mb-2">Selected Package</label>
+                    <select id="package" name="package" required class="w-full border border-outline/20 p-3 rounded bg-surface/50 focus:border-primary focus:ring-0 text-on-surface">
+                        <option value="" disabled selected>Select a package</option>
+                        <option value="Starter">Starter Package (USD 450)</option>
+                        <option value="Premium">Premium Placement (USD 1,125)</option>
+                        <option value="Diamond">Diamond Support (USD 4,500)</option>
+                    </select>
+                </div>
+
+                <!-- Move Timeline -->
+                <div>
+                    <label for="timeline" class="block font-label-caps text-[11px] text-primary uppercase tracking-widest mb-2">Target Departure Timeline</label>
+                    <select id="timeline" name="timeline" required class="w-full border border-outline/20 p-3 rounded bg-surface/50 focus:border-primary focus:ring-0 text-on-surface">
+                        <option value="" disabled selected>Select timeline</option>
+                        <option value="Within 3 months">Within 3 months</option>
+                        <option value="3-6 months">3-6 months</option>
+                        <option value="6+ months">6+ months</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Relocation Budget -->
+            <div>
+                <label for="budget" class="block font-label-caps text-[11px] text-primary uppercase tracking-widest mb-2">Relocation Budget Available (ZAR)</label>
+                <select id="budget" name="budget" required class="w-full border border-outline/20 p-3 rounded bg-surface/50 focus:border-primary focus:ring-0 text-on-surface">
+                    <option value="" disabled selected>Select budget range</option>
+                    <option value="Under R10,000">Under R10,000</option>
+                    <option value="R10,000 - R20,000">R10,000 - R20,000</option>
+                    <option value="R20,000 - R50,000">R20,000 - R50,000</option>
+                    <option value="R50,000+">R50,000+</option>
+                </select>
+            </div>
+
+            <!-- Form Submit -->
+            <div class="pt-4">
+                <button type="submit" class="w-full route-blue-btn p-4 rounded-lg font-label-caps text-label-caps uppercase tracking-wider font-bold">
+                    Submit Relocation Dossier
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Success Message Container (Hidden by default) -->
+    <div class="max-w-2xl w-full bg-white border border-[#caa829] p-8 md:p-12 shadow-sm rounded-lg text-center hidden" id="success-container">
+        <div class="mb-6 flex justify-center">
+            <span class="stamp-border text-[#caa829] border-[#caa829] px-6 py-3 text-lg font-black tracking-widest rotate-[-3deg]">Dossier Received</span>
+        </div>
+        <h2 class="font-display-lg text-2xl text-primary mt-6">Assessment Lodged Successfully</h2>
+        <p class="font-body-md text-on-surface-variant max-w-md mx-auto mt-4 leading-relaxed">
+            Thank you, <span id="user-display-name" class="font-bold text-primary">Candidate</span>. Your relocation assessment dossier is pending administrative eligibility review.
+        </p>
+        <div class="dossier-line my-8"></div>
+        <p class="font-body-md text-sm text-on-surface-variant">
+            A regional coordinator will reach out directly on WhatsApp at <span id="user-display-phone" class="font-bold text-primary">+27 ...</span> within 24 hours to confirm qualifications and schedule your onboarding call.
+        </p>
+        <div class="mt-8 flex justify-center gap-4">
+            <a class="border border-outline/30 px-6 py-3 rounded text-on-surface-variant font-label-caps text-xs uppercase" href="index.html">Back to Home</a>
+            <a class="route-blue-btn px-6 py-3 rounded text-white font-label-caps text-xs uppercase" href="resources.html">Browse Curriculum</a>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full bg-[#30312e] text-surface py-12 px-margin-desktop border-t border-outline/15">
+    <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div>
+            <div class="font-headline-md text-headline-md text-white uppercase tracking-widest mb-2">Lekker Abroad</div>
+            <p class="font-body-md text-xs text-secondary-fixed-dim">Helping South Africans teach, earn, and save in Northern Vietnam.</p>
+        </div>
+        <div class="flex gap-gutter font-label-caps text-xs">
+            <a class="text-secondary-fixed-dim hover:text-white" href="about.html">About</a>
+            <a class="text-secondary-fixed-dim hover:text-white" href="resources.html">Training</a>
+            <a class="text-secondary-fixed-dim hover:text-white" href="pricing.html">Packages</a>
+            <a class="text-secondary-fixed-dim hover:text-white" href="testimonials.html">Testimonials</a>
+        </div>
+    </div>
+    <div class="max-w-container-max mx-auto text-center mt-8 pt-8 border-t border-white/10 text-xs text-secondary-fixed-dim">
+        &copy; 2026 Lekker Abroad. All Rights Reserved. South Africa & Vietnam.
+    </div>
+</footer>
+
+<script>
+    // Handle URL parameters to pre-select package
+    window.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const pkgParam = urlParams.get('package');
+        if (pkgParam) {
+            const packageSelect = document.getElementById('package');
+            if (packageSelect) {
+                // Try matching Starter, Premium, Diamond
+                for (let option of packageSelect.options) {
+                    if (option.value.toLowerCase() === pkgParam.toLowerCase()) {
+                        option.selected = true;
+                        break;
+                    }
+                }
+            }
+        }
+    });
+
+    // Form Submission Handling
+    const form = document.getElementById('eligibility-form');
+    const formContainer = document.getElementById('form-container');
+    const successContainer = document.getElementById('success-container');
+    const displayName = document.getElementById('user-display-name');
+    const displayPhone = document.getElementById('user-display-phone');
+
+    if (form && formContainer && successContainer) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Extract details for confirmation page
+            const nameInput = document.getElementById('name');
+            const whatsappInput = document.getElementById('whatsapp');
+            
+            if (displayName && nameInput) {
+                displayName.textContent = nameInput.value;
+            }
+            if (displayPhone && whatsappInput) {
+                displayPhone.textContent = whatsappInput.value;
+            }
+
+            // Hide form and show success confirmation
+            formContainer.classList.add('hidden');
+            successContainer.classList.remove('hidden');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+    if (menuBtn && mobileNav) {
+        menuBtn.addEventListener('click', () => {
+            if (mobileNav.classList.contains('hidden')) {
+                mobileNav.classList.remove('hidden');
+                mobileNav.classList.add('flex');
+            } else {
+                mobileNav.classList.add('hidden');
+                mobileNav.classList.remove('flex');
+            }
+        });
+    }
+</script>
+</body>
+</html>
